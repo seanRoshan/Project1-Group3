@@ -3,66 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1</title>
+    <title>Hungry Explorer - Find local eateries effortlessly </title>
+    <!-- TAILWIND CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- OUR CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <h1>Project 1</h1>
+    <img src="./assets/images/HungryExplorerLogo.jpg" alt="Logo of 'Hungry Explorer' featuring a chefs hat, fork, knife, and a pretzel with a circular starry motif">   
+    <h1>Welcome to the Hungry Explorer</h1>   
+    <p>Your ultimate companion for culinary exploration! Whether you're a local foodie or a hungry traveler, Hungry Explorer helps you discover the perfect dining spot nearby. With its intuitive interface and powerful search filters, finding your ideal restaurant is a breeze. From cozy cafes to exotic eateries, explore a world of flavors with Hungry Explorer.</p> 
 
-    <p>Project Proposal
-    Title: Name suggestions for a mobile application that finds nearby restaurants:
-    •	Eatery Finder
-    •	Nearby Eats
-    •	Foodie Scout
-    •	Dine Around
-    •	Restaurant Radar
-    •	Table Trekker
-    •	Hungry Explorer
-    •	Culinary Compass
-    •	Taste Tracker
-    •	Meal Mate
-    Description:  Introducing FlavorQuest: Your ultimate companion for culinary exploration! Whether you're a local foodie or a hungry traveler, FlavorQuest helps you discover the perfect dining spot nearby. With its intuitive interface and powerful search filters, finding your ideal restaurant is a breeze. From cozy cafes to exotic eateries, explore a world of flavors with FlavorQuest
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Login</button>
+            </form>
+        </div>
+    </div>
 
-    User Story: 
-    As an app user, we're creating this platform for our community to easily discover local restaurants. Our goal is to empower users to find restaurants that match their desired cuisine type. With filtering options for price, rating, and dietary restrictions, we aim to help hungry individuals locate nearby eateries serving their favorite dishes faster than ever before
+    <div id="map" class="h-64"></div>
+    <div id="restaurantList" class="mt-4"></div>
 
-    Wireframe: 
-    *See Mike’s screen*
-
-    API’s: 
-    - Google Maps Places API
-    - Yelp Fusion API
-
-    Breakdown of Tasks: 
-
-    Here's a breakdown of the 6-step user flow into actionable tasks for a web developer:
-
-    Search for Restaurants:
-    Implement a search bar or location detection feature on the homepage.
-    Integrate Google Maps Places API to fetch nearby restaurants based on the user's location.
-    Display search results on the page.
-
-    View Search Results:
-    Design and implement a user-friendly layout to display restaurant cards.
-    Show basic information (name, cuisine, rating, distance) for each restaurant.
-    Implement pagination or lazy loading for large result sets.
-
-    Explore Restaurant Details:
-    Design a restaurant details page layout.
-    Use Yelp Fusion API to fetch additional details (address, phone number, website, menu, photos, reviews) for a selected restaurant.
-    Display the fetched information on the restaurant details page.
-
-    Map View and Directions:
-    Integrate Google Maps API to display a map showing the location of the selected restaurant.
-    Provide a button or link to get directions from the user's current location to the restaurant.
-
-    Filtering and Sorting:
-    Design and implement UI elements for filtering (cuisine type, price, rating) and sorting (distance, rating) search results.
-    Use JavaScript to dynamically update the displayed restaurant list based on the selected filters and sorting options.
-
-    Interaction and Feedback:
-    Implement user interaction features such as saving favorite restaurants, writing reviews, and managing reservations.
-    Provide a feedback form or mechanism for users to report issues or suggest improvements.
-    </p>
-
+  <script src="./assets/js/script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxWw3DSNZJTDbkBnPVZabPtuLWZAgpOcA&libraries=places"></script>
 </body>
 </html>
