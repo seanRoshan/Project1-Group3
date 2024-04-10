@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Explorer - Find local eateries effortlessly </title>
+    <!-- TAILWIND CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- OUR CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <img src="./assets/images/HungryExplorerLogo.jpg" alt="Logo of 'Hungry Explorer' featuring a chefs hat, fork, knife, and a pretzel with a circular starry motif">   
+    <h1>Welcome to the Hungry Explorer</h1>   
+    <p>Your ultimate companion for culinary exploration! Whether you're a local foodie or a hungry traveler, Hungry Explorer helps you discover the perfect dining spot nearby. With its intuitive interface and powerful search filters, finding your ideal restaurant is a breeze. From cozy cafes to exotic eateries, explore a world of flavors with Hungry Explorer.</p> 
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="map" class="h-64"></div>
+    <div id="restaurantList" class="mt-4"></div>
+
+  <script src="./assets/js/script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxWw3DSNZJTDbkBnPVZabPtuLWZAgpOcA&libraries=places"></script>
+</body>
+</html>
