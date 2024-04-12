@@ -108,6 +108,7 @@ function addPriceToRestaurant(restaurantId) {
       accept: "application/json",
       authorization:
         "Bearer XEI7zCKiTsrcNgP0ObLbm9EWlQ87cD2Jp9_5lcPXjdVG5WPvP81Dd8iZv4E3FEnqRiSD85w1OmVe9Vyd5kRlNUgJ6oxUZeUYK499qMWsXZu85aaS3gcSpHr1NvEVZnYx",
+      "Access-Control-Allow-Origin": "*",
     },
   };
 
